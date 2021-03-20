@@ -1,0 +1,50 @@
+/*bind 与 connect 函数
+ *服务端需要使用bind将自己创建的套接字与IP Port绑定起来
+ *客户端需要使用connect建立联系
+ *
+ *Linux bind函数: 
+ *函数原型:
+ *  int bind(int sock, struct sockaddr *addr, socklen_t addrlen);
+ *参数解释:
+ *  sock为文件描述符  
+ *  addr为存储IP与port的结构体指针
+ *  addrlen为addr变量的大小(字节):使用sizeof()可以算出
+ *
+ *
+ *struct scokaddr_in原型
+ *struct sockaddr_in{
+ *    sa_family_t     sin_family;   //地址族Address Family也就是地址类型
+ *    uint16_t        sin_port;     //16位的端口号
+ *    struct in_addr  sin_addr;     //32位IP地址
+ *    char            sin_zero[8];  //不使用一般用0填充            
+ *};
+ *uint16_t 的长度为两个字节理论上端口号的取值范围为 0~65536但 0~1023 的端口一般由系统分配给特定的服务程序
+ *struct in_addr{
+ *    in_addr_t  s_addr;  //32位的IP地址    
+ *};
+ *
+ *为什么使用 sockaddr_in做第二个参数而不是用
+ *struct sockaddr{
+ *    sa_family_t  sin_family;   //地址族Address Family也就是地址类型
+ *    char         sa_data[14];  //IP地址和端口号    
+ *};
+ *
+ *sockaddr 是一种通用的结构体可以用来保存多种类型的IP地址和端口号
+ *而sockaddr_in 是专门用来保存 IPv4 地址的结构体另外还有 sockaddr_in6用来保存 IPv6 地址它的定义如下
+ *struct sockaddr_in6 { 
+ *    sa_family_t sin6_family;  //(2)地址类型取值为AF_INET6
+ *    in_port_t sin6_port;  //(2)16位端口号
+ *    uint32_t sin6_flowinfo;  //(4)IPv6流信息
+ *    struct in6_addr sin6_addr;  //(4)具体的IPv6地址
+ *    uint32_t sin6_scope_id;  //(4)接口范围ID                    
+ };
+ *
+ *
+ *Linux connect()函数
+ *int connect(int sock, struct sockaddr *serv_addr, socklen_t addrlen);  //Linux
+ *参数解释与bind()函数相同
+ *
+ *
+ *
+ *
+ * */

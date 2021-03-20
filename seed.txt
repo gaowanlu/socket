@@ -1,0 +1,12 @@
+socket数据的发送和接受
+Linux 不区分套接字文件和普通文件使用 write() 可以向套接字中写入数据使用 read() 可以从套接字中读取数据
+
+
+write() 的原型为
+ssize_t write(int fd, const void *buf, size_t nbytes);
+write() 函数会将缓冲区 buf 中的 nbytes 个字节写入文件 fd成功则返回写入的字节数失败则返回 -1
+
+ssize_t read(int fd, void *buf, size_t nbytes);
+read() 函数会从 fd 文件中读取 nbytes 个字节并保存到缓冲区 buf成功则返回读取到的字节数但遇到文件结尾则返回0失败则返回 -1
+
+

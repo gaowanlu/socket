@@ -1,0 +1,15 @@
+回声客户端的实现
+
+所谓回声是指客户端向服务器发送一条数据服务器再将数据原样返回给客户端就像声音一样遇到障碍物会被反弹回来
+客户端也可以使用 write() / send() 函数向服务器发送数据服务器也可以使用 read() / recv() 函数接收数据
+
+使用read来读取客户端来的套接字内容,返回值为读取内容的大小
+int clntSock = accept(servSock, (sockdrr*)&clntAddr, &nSize);
+char buffer[BUF_SIZE];  //缓冲区
+int strLen = read(clntSock, buffer, BUF_SIZE, 0);  //接收客户端发来的数据
+write(clntSock, buffer, strLen, 0);  //将数据原样返回,即写入客户端套接字
+
+客户端与其差不多
+
+其实就是把来自客户端的套接字的内容读取出来,然后写入到客户端套接字内,实现客户端发送什么,服务端就返回什么
+向回声一样

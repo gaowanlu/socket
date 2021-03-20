@@ -1,0 +1,28 @@
+/*
+ * 在linux下一切都是文件,每个文件都有自己的文件描述符
+ *这个文件描述符是一个int类型的编号,称为File Desctiptor
+ *stdin 描述符为 0
+ *stdout 描述符为 1
+ *socket也是文件的一种和普通文件的操作没有区别,可以使用文件I/O函数也不见怪了
+ *我们可以认为,两台计算的通信联系是两个socket文件的相互读写
+ *文件描述符有时也被称为文件句柄 File Handle
+ *
+ *
+ *在Linux下创建套接字(socket)
+ *socket()函数在<sys/socket.h>下面
+ *函数原型:int socket(int af,int type,int protocol);
+ *参数解释:
+ *   af:地址族 Address Family 也就是IP地址类型,常用的有AF_INET AF_INET6即IPV4与IPV6
+ *   type:数据传输方式 常用的有SOCK_STREAM SOCK_DGRAM 二者区别在于是否一次传输,能不能反悔
+ *   protocol:表示传输协议常用的有IPPROTO_TCP IPPTOTO_UDP,分别表示TCP UDP 传输协议
+ *
+ *参数用法:
+ *   如果使用SOCK_STREAM传输方式 使用 TCP
+ *   如果使用SOCK_DGRAM传输方式 是能使用 UDP协议
+ *
+ *在创建套接字时:
+ *int tcp_socket = socket(AF_INET, SOCK_STREAM, 0);  //创建TCP套接字
+ *int udp_socket = socket(AF_INET, SOCK_DGRAM, 0);  //创建UDP套接字
+ *第三个参数可以使用0 系统会自动推算要使用那种传输协议
+ *
+ * */

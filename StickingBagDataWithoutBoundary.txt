@@ -1,0 +1,34 @@
+
+TCP的粘包问题以及数据的无边界性
+
+1    socket缓冲区和数据的传递过程可以看到数据的接收和发送是无关的read()/recv() 函数不管数据发送了多少次都会尽可能多的接收数据也就是说read()/recv() 和 write()/send() 的执行次数可能不同
+
+2    例如write()/send() 重复执行三次每次都发送字符串"abc"那么目标机器上的 read()/recv() 可能分三次接收每次都接收"abc"也可能分两次接收第一次接收"abcab"第二次接收"cabc"也可能一次就接收到字符串"abcabcabc"
+
+3    假设我们希望客户端每次发送一位学生的学号让服务器端返回该学生的姓名住址成绩等信息这时候可能就会出现问题服务器端不能区分学生的学号例如第一次发送 1第二次发送 3服务器可能当成 13 来处理返回的信息显然是错误的
+
+4    这就是数据的粘包问题客户端发送的多个数据包被当做一个数据包接收也称数据的无边界性read()/recv() 函数不知道数据包的开始或结束标志实际上也没有任何开始或结束标志只把它们当做连续的数据流来处理
+
+
+Server:
+SOCKET clntSock = accept(servSock, (SOCKADDR*)&clntAddr, &nSize);
+Sleep(10000);  //注意这里让程序暂停10秒,这段时时间没有从缓冲区read则,缓冲区则会进行积压,造成数据累加
+int recvLen = read(clntSock, buffer, BUF_SIZE, 0);//可能一次将多次的内容一次读取出来
+
+
+Client:
+connect(sock, (SOCKADDR*)&sockAddr, sizeof(SOCKADDR));
+//获取用户输入的字符串并发送给服务器
+gets(bufSend);
+for(int i=0; i<3; i++){
+    write(sock, bufSend, strlen(bufSend));
+}
+//接收服务器传回的数据
+char bufRecv[BUF_SIZE] = {0};
+read(sock, bufRecv, BUF_SIZE, 0);
+
+
+
+client 执行到 read() 函数由于输入缓冲区中没有数据所以会被阻塞直到10秒后 server 传回数据才开始执行用户看到的直观效果就是client 暂停一段时间才输出 server 返回的结果
+
+client 的 send() 发送了三个数据包而 server 的 recv() 却只接收到一个数据包这很好的说明了数据的粘包问题

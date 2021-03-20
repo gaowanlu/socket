@@ -1,0 +1,16 @@
+listen()函数
+int listen(int sock, int backlog);  //Linux
+    sock为套接字
+    backlog为请求队列最大长度
+    如果将 backlog 的值设置为 SOMAXCONN就由系统来决定请求队列长度这个值一般比较大可能是几百或者更多
+
+注意listen() 只是让套接字处于监听状态并没有接收请求接收请求需要使用 accept() 函数
+
+accept()函数
+    当套接字处于监听状态时可以通过 accept() 函数来接收客户端请求
+    int accept(int sock, struct sockaddr *addr, socklen_t *addrlen);  //Linux
+
+accept()返回一个新的套接字,addr保存了客户端的IP地址与端口号而sock是服务器端的套接字
+
+accept() 会阻塞程序执行后面代码不能被执行直到有新的请求到来
+
