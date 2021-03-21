@@ -1,0 +1,82 @@
+:网络数据的大小端问题
+不同cpu对内存的顺序存储是不同的
+比如4个字节的int
+有的cpu在往内存存
+00000000 00000000 00000000 00000001
+有的存
+00000001 00000000 00000000 00000000
+
+大端序和小端序
+CPU 向内存保存数据的方式有两种
+
+大端序Big Endian高位字节存放到低位地址高位字节在前
+小端序Little Endian高位字节存放到高位地址低位字节在前
+
+不同 CPU 保存和解析数据的方式不同主流的 Intel 系列 CPU 为小端序小端序系统和大端序系统通信时会发生数据解析错误因此在发
+送数据前要将数据转换为统一的格式网络字节序Network Byte Order网络字节序统一为大端序
+
+主机 A 先把数据转换成大端序再进行网络传输主机 B 收到数据后先转换为自己的格式再解析
+
+网络字节序转换函数
+
+以前的代码
+//创建sockaddr_in结构体变量
+struct sockaddr_in serv_addr;
+memset(&serv_addr, 0, sizeof(serv_addr));  //每个字节都用0填充
+serv_addr.sin_family = AF_INET;  //使用IPv4地址
+serv_addr.sin_addr.s_addr = inet_addr("127.0.0.1");  //具体的IP地址
+serv_addr.sin_port = htons(1234);  //端口号
+
+htons与inet_addrw是干什么的?
+
+htons() 用来将当前主机字节序转换为网络字节序其中h代表主机host字节序n代表网络network字节序s代表shorthtons 是 htons 
+的组合可以理解为将 short 型数据从当前主机字节序转换为网络字节序
+
+htons()host to network short将 short 类型数据从主机字节序转换为网络字节序
+ntohs()network to host short将 short 类型数据从网络字节序转换为主机字节序
+htonl()host to network long将 long 类型数据从主机字节序转换为网络字节序
+ntohl()network to host long将 long 类型数据从网络字节序转换为主机字节序
+
+
+    unsigned short host_port = 0x1234, net_port;
+    unsigned long host_addr = 0x12345678, net_addr;
+ 
+    net_port = htons(host_port);
+    net_addr = htonl(host_addr);
+ 
+    printf("Host ordered port: %#x\n", host_port);
+    printf("Network ordered port: %#x\n", net_port);
+    printf("Host ordered address: %#lx\n", host_addr);
+    printf("Network ordered address: %#lx\n", net_addr);
+运行结果
+Host ordered port: 0x1234
+Network ordered port: 0x3412
+Host ordered address: 0x12345678
+Network ordered address: 0x78563412
+
+sockaddr_in 中保存 IP 地址的成员为 32 位整数而我们熟悉的是点分十进制表示法例如 127.0.0.1
+它是一个字符串因此为了分配 IP 地址需要将字符串转换为 4 字节整数
+inet_addr() 函数可以完成这种转换inet_addr() 除了将字符串转换为 32 位整数同时还进行网络字节序转换
+
+
+    char *addr1 = "1.2.3.4";
+    char *addr2 = "1.2.3.256";
+ 
+    unsigned long conv_addr = inet_addr(addr1);
+    if(conv_addr == INADDR_NONE){
+        puts("Error occured!");
+    }else{
+        printf("Network ordered integer addr: %#lx\n", conv_addr);
+    }
+ 
+    conv_addr = inet_addr(addr2);
+    if(conv_addr == INADDR_NONE){
+        puts("Error occured!");
+    }else{
+        printf("Network ordered integer addr: %#lx\n", conv_addr);
+    }
+
+Network ordered integer addr: 0x4030201
+Error occured!
+
+从运行结果可以看出inet_addr() 不仅可以把 IP 地址转换为 32 位整数还可以检测无效 IP 地址

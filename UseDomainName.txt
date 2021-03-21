@@ -1,0 +1,52 @@
+怎样使用域名替代使用IP地址
+通过域名获取IP地址
+gethostbyname() 函数可以完成这种转换它的原型为
+	struct hostent *gethostbyname(const char *hostname);
+
+hostname 为主机名也就是域名使用该函数时只要传递域名字符串就会返回域名对应的 IP 地址
+返回的地址信息会装入 hostent 结构体该结构体的定义如下
+struct hostent{
+    char *h_name;  //official name
+    char **h_aliases;  //alias list
+    int  h_addrtype;  //host address type
+    int  h_length;  //address lenght
+    char **h_addr_list;  //address list
+}
+
+h_name官方域名Official domain name官方域名代表某一主页但实际上一些著名公司的域名并未用官方域名注册
+h_aliases别名可以通过多个域名访问同一主机同一 IP 地址可以绑定多个域名因此除了当前域名还可以指定其他域名
+h_addrtypegethostbyname() 不仅支持 IPv4还支持 IPv6可以通过此成员获取IP地址的地址族地址类型信息IPv4 对应 AF_INETIPv6 对应 AF_INET6
+h_length保存IP地址长度IPv4 的长度为 4 个字节IPv6 的长度为 16 个字节
+h_addr_list这是最重要的成员通过该成员以整数形式保存域名对应的 IP 地址对于
+用户较多的服务器可能会分配多个 IP 地址给同一域名利用多个服务器进行均衡负载
+
+h_name-> official hostname\0
+h_aliases-> char*->alias#1\0
+            char*->alias#1\0
+            NULL
+h_addrtype
+h_length
+h_addr_list->char*->IP addr#1
+             char*->IP addr#2
+             char*->IP addr#3
+             NULL
+code:
+struct hostent *host = gethostbyname("www.baidu.com");
+    if(!host){
+        puts("Get IP address error!");
+        system("pause");
+        exit(0);
+    }
+ 
+    //别名
+    for(int i=0; host->h_aliases[i]; i++){
+        printf("Aliases %d: %s\n", i+1, host->h_aliases[i]);
+    }
+ 
+    //地址类型
+    printf("Address type: %s\n", (host->h_addrtype==AF_INET) ? "AF_INET": "AF_INET6");
+ 
+    //IP地址
+    for(int i=0; host->h_addr_list[i]; i++){
+        printf("IP addr %d: %s\n", i+1, inet_ntoa( *(struct in_addr*)host->h_addr_list[i] ) );
+
