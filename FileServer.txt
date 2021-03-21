@@ -1,0 +1,152 @@
+//socket编程实现文件传输功能 Server
+//注意问题
+//1 文件大小不确定,有可能比缓冲区大很多,一次调用write()不能将文件发送
+/*
+Server code
+缓冲区
+char buf[512]={0};
+读取发送文件
+while((count=fread(buf,1,512,file))>0){
+    write(clientSock,buf,count);
+}
+
+Client code
+char buf[512]={0}
+ssize_t len;
+循环写入文件
+while(0!=(len=read(sock,buf,512))){
+    fwrite(buf,len,1,file);
+}
+
+对于 Server 端的代码当读取到文件末尾fread() 会返回 0结束循环
+对于 Client 端代码有一个关键的问题就是文件传输完毕后让 read() 返回 0结束 while 循环
+注意读取完缓冲区中的数据 read() 并不会返回 0而是被阻塞直到缓冲区中再次有数据
+
+FIN 包表示数据传输完毕计算机收到 FIN 包后就知道对方不会再向自己传输数据当调用 read() 函数时如果缓冲区中没有数据就会返回 0表示读到了socket文件的末尾
+ */
+
+/*Server
+#include <stdio.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <errno.h>
+ 
+int main(int c, char * * v)
+{
+    /* 检查文件是否存在 */
+    char *fileName = "/opt/w0034/LinuxC/SampleCode/fileDownload/send.avi";
+    FILE* file = fopen(fileName, "r");
+    if (NULL == file)
+    {
+        printf("open file failed, errno = %d.\n", errno);
+        return 1;
+    }
+ 
+    /* 创建Socket */
+    int sock = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+    if (0 >= sock)
+    {
+        fclose(file);
+        printf("socket failed, errno = %d.\n", errno);
+        return 1;
+    }
+ 
+    /* 绑定Socket */
+    struct sockaddr_in addr = {0};
+    addr.sin_family = AF_INET;
+    addr.sin_port = htons(8093);
+    if (0 != bind(sock, (struct sockaddr*)&addr, sizeof(addr)))
+    {
+        fclose(file);
+        printf("bind failed, errno = %d.\n", errno);
+        return 1;
+ 
+    }
+ 
+    /* 启动监听 */
+    if (0 != listen(sock, 20))
+    {
+        fclose(file);
+        printf("listen failed, errno = %d.\n", errno);
+        return 1;
+    }
+ 
+    /* 等待客户端连接 */
+    struct sockaddr_in clientAddr = {0};
+	socklen_t addrLen = sizeof(clientAddr);
+    int clientSock = accept(sock, (struct sockaddr*)&clientAddr, &addrLen);
+ 
+	char buf[512] = {0};
+    size_t count;
+    /* 读取发送文件 */
+    while ((count = fread(buf, 1, 512, file)) > 0)
+    {
+        send(clientSock, buf, count, 0);
+    }
+ 
+    shutdown(clientSock, SHUT_WR);
+    fclose(file);
+    close(clientSock);
+    close(sock);
+ 
+    return 0;
+}
+ */
+
+/*Client
+#include <stdio.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <errno.h>
+ 
+int main(int c, char * * v)
+{
+    /* 输入文件名创建文件 */
+    char aucFileName[64] = {0};
+    printf("请输入文件名:\n");
+    scanf("%s", aucFileName);
+    File* file = fopen(aucFileName, "wb");
+    if (NULL == file)
+    {
+        printf("open file failed, errno = %d.\n", errno);
+        return 1;
+    }
+ 
+	/* 创建Socket */
+    int sock = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+    if (-1 == sock)
+    {
+        fclose(file);
+        printf("socket failed, errno = %d.\n", errno);
+        return 1;
+    }
+ 
+    /* 连接服务端 */
+    struct sockaddr_in addr = {0};
+    addr.sin_family      = AF_INET;
+    addr.sin_port        = htons(8093);
+    addr.sin_addr.s_addr = inet_addr("127.0.0.1");
+    if (0 != connect(sock, (struct sockaddr*)&addr, sizeof(addr)))
+    {
+        fclose(file);
+        printf("connect failed, errno = %d.\n", errno);
+        return 1;
+    }
+ 
+    char buf[512] = {0};
+    ssize_t len;
+    /* 循环接收数据写入文件 */
+    while (0 != (len = recv(sock, buf, 512, 0)))
+    {
+        fwrite(buf, len, 1, file);
+    }
+ 
+    printf("file download success");
+    fclose(file);
+    close(sock);
+ 
+    return 0;
+}
+
+
+*/
