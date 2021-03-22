@@ -8,9 +8,9 @@
 #include<errno.h>
 int main(void){
     //输入传输文件地址
-    char filename[1000]={0};
+    char *filename="./data.txt\0";
     printf("请输入要传输的文件:\n");
-    scanf("%s",filename);
+    //scanf("%s",filename);
     //文件指针(以读的方式打开)
     FILE* file=fopen(filename,"r");
     if(!file){
@@ -38,8 +38,10 @@ int main(void){
     //创建客户端信息结构体
     struct sockaddr_in client_address;
     socklen_t client_address_size=sizeof(client_address);
+    while(1){
     //进行接受请求,获取客户端套接字client_socket
     int client_socket=accept(server_socket,(struct sockaddr*)&client_address,&client_address_size);
+    printf("接受请求\n");
     //定义缓冲区
     char buffer[512]={0};
     size_t count;
@@ -48,10 +50,13 @@ int main(void){
     }
     //关闭向客户端读写数据通道
     shutdown(client_socket,SHUT_WR);
+    printf("受理成功\n");
     //关闭文件
     fclose(file);
     //关闭服务端与客户端的套接字
     close(client_socket);
+    FILE* file=fopen(filename,"r");
+    }
     close(server_socket);
     printf("Over!");
     return 0;

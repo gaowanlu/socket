@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+Date: Mon, 22 Mar 2021 06:30:46 GMT
+Content-Type: text/html; charset=utf-8
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=" width=640,user-scalable=no">
+    <title>图享IMageShare</title>
+</head>
+<body style="background-color:#0066cc;">
+    <h1 style="color:#ffffff;">SLAGO SERVER</h1>
+    <p style="color:#ffffff;">中国-桂林电子科技大学</p>
+</body>
+</html>
