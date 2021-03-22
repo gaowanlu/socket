@@ -36,13 +36,15 @@ int main(void){
    //定义缓冲区
    char buffer[512]={0};
    size_t len;
+   size_t countByte=0;
    int temp=0;
    while(0!=(len=read(client_socket,buffer,512))){
        fwrite(buffer,len,1,file);
+       countByte+=len;
        if(temp%2==0){
-           printf("*正在下载\n");
+           printf("##**##正在下载 %zd bit  CountByte: %zd bit\n",len,countByte);
        }else{
-           printf("#正在下载\n");
+           printf("**##**正在下载 %zd bit  CountByte: %zd bit\n",len,countByte);
        }
        temp++;
        if(temp>10000)temp=0;
