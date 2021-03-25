@@ -28,8 +28,8 @@ void processClient_Socket(int *clientSocket){
 
 int main(void){
     //输入传输文件地址
-    char *filename="./data.txt\0";
-    printf("请输入要传输的文件:\n");
+    const char *filename="./data.txt\0";
+    //printf("请输入要传输的文件:\n");
     //scanf("%s",filename);
     //文件指针(以读的方式打开)
     FILE* file=fopen(filename,"r");
