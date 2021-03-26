@@ -1,0 +1,704 @@
+pi@raspberrypi:~ $ ls
+Bookshelf  Documents   index.html.1                    Music      Public             venv
+classdir   Downloads   main                            nohup.out  Templates          Videos
+Desktop    index.html  mariadb-connector-c-3.1.12-src  Pictures   thinclient_drives
+pi@raspberrypi:~ $ cd ./mariadb-connector-c-3.1.12-src
+pi@raspberrypi:~/mariadb-connector-c-3.1.12-src $ ls
+appveyor.yml         client  CMakeLists.txt  include     mariadb_config  README    win        zlib
+azure-pipelines.yml  cmake   COPYING.LIB     libmariadb  plugins         unittest  win-iconv
+pi@raspberrypi:~/mariadb-connector-c-3.1.12-src $ cmake .
+-- The C compiler identification is GNU 8.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found CURL: /usr/lib/arm-linux-gnueabihf/libcurl.so (found version "7.64.0")
+-- Performing Test HAS_-Wunused_FLAG
+-- Performing Test HAS_-Wunused_FLAG - Success
+-- Performing Test HAS_-Wlogical-op_FLAG
+-- Performing Test HAS_-Wlogical-op_FLAG - Success
+-- Performing Test HAS_-Wno-uninitialized_FLAG
+-- Performing Test HAS_-Wno-uninitialized_FLAG - Success
+-- Performing Test HAS_-Wall_FLAG
+-- Performing Test HAS_-Wall_FLAG - Success
+-- Performing Test HAS_-Wextra_FLAG
+-- Performing Test HAS_-Wextra_FLAG - Success
+-- Performing Test HAS_-Wformat-security_FLAG
+-- Performing Test HAS_-Wformat-security_FLAG - Success
+-- Performing Test HAS_-Wno-init-self_FLAG
+-- Performing Test HAS_-Wno-init-self_FLAG - Success
+-- Performing Test HAS_-Wwrite-strings_FLAG
+-- Performing Test HAS_-Wwrite-strings_FLAG - Success
+-- Performing Test HAS_-Wshift-count-overflow_FLAG
+-- Performing Test HAS_-Wshift-count-overflow_FLAG - Success
+-- Performing Test HAS_-Wdeclaration-after-statement_FLAG
+-- Performing Test HAS_-Wdeclaration-after-statement_FLAG - Success
+-- Performing Test HAS_-Wno-undef_FLAG
+-- Performing Test HAS_-Wno-undef_FLAG - Success
+-- Performing Test HAS_-Wno-unknown-pragmas_FLAG
+-- Performing Test HAS_-Wno-unknown-pragmas_FLAG - Success
+-- Found Git: /usr/bin/git (found version "2.20.1")
+-- MariaDB Connector C: INSTALL_BINDIR=bin
+-- MariaDB Connector C: INSTALL_LIBDIR=lib/mariadb
+-- MariaDB Connector C: INSTALL_PCDIR=lib/pkgconfig
+-- MariaDB Connector C: INSTALL_INCLUDEDIR=include/mariadb
+-- MariaDB Connector C: INSTALL_DOCSDIR=
+-- MariaDB Connector C: INSTALL_PLUGINDIR=lib/mariadb/plugin
+-- MariaDB Connector C: LIBMARIADB_STATIC_NAME mariadbclient
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Using unsigned short
+-- Check if the system is big endian - little endian
+-- Looking for include file alloca.h
+-- Looking for include file alloca.h - found
+-- Looking for include file arpa/inet.h
+-- Looking for include file arpa/inet.h - found
+-- Looking for include file dlfcn.h
+-- Looking for include file dlfcn.h - found
+-- Looking for include file fcntl.h
+-- Looking for include file fcntl.h - found
+-- Looking for include file float.h
+-- Looking for include file float.h - found
+-- Looking for include file limits.h
+-- Looking for include file limits.h - found
+-- Looking for include file linux/limits.h
+-- Looking for include file linux/limits.h - found
+-- Looking for include file pwd.h
+-- Looking for include file pwd.h - found
+-- Looking for include file sched.h
+-- Looking for include file sched.h - found
+-- Looking for include file select.h
+-- Looking for include file select.h - not found
+-- Looking for include file signal.h
+-- Looking for include file signal.h - found
+-- Looking for include file stdlib.h
+-- Looking for include file stdlib.h - found
+-- Looking for include file string.h
+-- Looking for include file string.h - found
+-- Looking for include file strings.h
+-- Looking for include file strings.h - found
+-- Looking for include file sys/ioctl.h
+-- Looking for include file sys/ioctl.h - found
+-- Looking for include file sys/select.h
+-- Looking for include file sys/select.h - found
+-- Looking for include file sys/socket.h
+-- Looking for include file sys/socket.h - found
+-- Looking for include file sys/stat.h
+-- Looking for include file sys/stat.h - found
+-- Looking for include file sys/un.h
+-- Looking for include file sys/un.h - found
+-- Looking for include file unistd.h
+-- Looking for include file unistd.h - found
+-- Looking for include file utime.h
+-- Looking for include file utime.h - found
+-- Looking for include file ucontext.h
+-- Looking for include file ucontext.h - found
+-- Looking for alloca
+-- Looking for alloca - not found
+-- Looking for dlerror
+-- Looking for dlerror - not found
+-- Looking for dlopen
+-- Looking for dlopen - not found
+-- Looking for fcntl
+-- Looking for fcntl - found
+-- Looking for memcpy
+-- Looking for memcpy - found
+-- Looking for nl_langinfo
+-- Looking for nl_langinfo - found
+-- Looking for setlocale
+-- Looking for setlocale - found
+-- Looking for poll
+-- Looking for poll - found
+-- Looking for getpwuid
+-- Looking for getpwuid - found
+-- Looking for makecontext
+-- Looking for makecontext - found
+-- Looking for cuserid
+-- Looking for cuserid - found
+-- Check size of char *
+-- Check size of char * - done
+-- Check size of int
+-- Check size of int - done
+-- Check size of long
+-- Check size of long - done
+-- Check size of long long
+-- Check size of long long - done
+-- Check size of size_t
+-- Check size of size_t - done
+-- Check size of uchar
+-- Check size of uchar - failed
+-- Check size of uint
+-- Check size of uint - done
+-- Check size of ulong
+-- Check size of ulong - done
+-- Check size of int8
+-- Check size of int8 - failed
+-- Check size of uint8
+-- Check size of uint8 - failed
+-- Check size of int16
+-- Check size of int16 - failed
+-- Check size of uint16
+-- Check size of uint16 - failed
+-- Check size of int32
+-- Check size of int32 - failed
+-- Check size of uint32
+-- Check size of uint32 - failed
+-- Check size of int64
+-- Check size of int64 - failed
+-- Check size of uint64
+-- Check size of uint64 - failed
+-- Check size of socklen_t
+-- Check size of socklen_t - failed
+-- Performing Test SOCKET_SIZE_FOUND_socklen_t
+-- Performing Test SOCKET_SIZE_FOUND_socklen_t - Success
+-- Looking for floor
+-- Looking for floor - not found
+-- Looking for floor in m
+-- Looking for floor in m - found
+-- Looking for pthread_getspecific
+-- Looking for pthread_getspecific - not found
+-- Looking for pthread_getspecific in pthread
+-- Looking for pthread_getspecific in pthread - found
+-- Looking for gethostbyname_r
+-- Looking for gethostbyname_r - found
+-- Looking for setsockopt
+-- Looking for setsockopt - found
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE
+-- Found OpenSSL: /usr/lib/arm-linux-gnueabihf/libcrypto.so (found version "1.1.1d")
+-- TLS library/version: OpenSSL 1.1.1d
+-- SYSTEM_LIBS dl;m;pthread;pthread;dl;m;/usr/lib/arm-linux-gnueabihf/libssl.so;/usr/lib/arm-linux-gnueabihf/libcrypto.so
+-- Dynamic column API support: ON
+-- SYSTEM processor: armv7l
+-- MariaDB Connector/c configuration:
+-- Static PLUGINS mysql_native_password;mysql_old_password;pvio_socket
+-- Dynamic PLUGINS dialog;client_ed25519;caching_sha2_password;sha256_password;mysql_clear_password;remote_io
+-- CPack generation: TGZ
+-- SSL support: OPENSSL Libs: /usr/lib/arm-linux-gnueabihf/libssl.so;/usr/lib/arm-linux-gnueabihf/libcrypto.so
+-- Zlib support: yes (using bundled zlib)
+-- Installation layout: DEFAULT
+-- Include files will be installed in include/mariadb
+-- Libraries will be installed in lib/mariadb
+-- Binaries will be installed in bin
+-- Documentation included from
+-- Required: dl;m;pthread
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/pi/mariadb-connector-c-3.1.12-src
+pi@raspberrypi:~/mariadb-connector-c-3.1.12-src $ ls
+appveyor.yml         cmake           cmake_install.cmake  CPackConfig.cmake        libmariadb      plugins   win
+azure-pipelines.yml  CMakeCache.txt  CMakeLists.txt       CPackSourceConfig.cmake  Makefile        README    win-iconv
+client               CMakeFiles      COPYING.LIB          include                  mariadb_config  unittest  zlib
+pi@raspberrypi:~/mariadb-connector-c-3.1.12-src $ make
+Scanning dependencies of target client_ed25519
+[  0%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ed25519.c.o
+[  1%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_0.c.o
+[  2%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_isnegative.c.o
+[  2%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_sub.c.o
+[  3%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_p1p1_to_p2.c.o
+[  3%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_p3_to_cached.c.o
+[  4%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/open.c.o
+[  5%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_1.c.o
+[  5%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_isnonzero.c.o
+[  6%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_tobytes.c.o
+[  7%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_p1p1_to_p3.c.o
+[  7%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_p3_to_p2.c.o
+[  8%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/sc_muladd.c.o
+[  8%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_add.c.o
+[  9%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_mul.c.o
+[ 10%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_add.c.o
+[ 10%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_p2_0.c.o
+[ 11%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_precomp_0.c.o
+[ 12%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/sc_reduce.c.o
+[ 12%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_cmov.c.o
+[ 13%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_neg.c.o
+[ 14%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_double_scalarmult.c.o
+[ 14%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_p2_dbl.c.o
+[ 15%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_scalarmult_base.c.o
+[ 15%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/sign.c.o
+[ 16%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_copy.c.o
+[ 17%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_pow22523.c.o
+[ 17%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_frombytes.c.o
+[ 18%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_p3_0.c.o
+[ 19%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_sub.c.o
+[ 19%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/verify.c.o
+[ 20%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_frombytes.c.o
+[ 20%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_sq2.c.o
+[ 21%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_madd.c.o
+[ 22%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_p3_dbl.c.o
+[ 22%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_tobytes.c.o
+[ 23%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_invert.c.o
+[ 24%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/fe_sq.c.o
+[ 24%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_msub.c.o
+[ 25%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/ge_p3_tobytes.c.o
+[ 25%] Building C object CMakeFiles/client_ed25519.dir/plugins/auth/ref10/keypair.c.o
+[ 26%] Building C object CMakeFiles/client_ed25519.dir/libmariadb/secure/openssl_crypt.c.o
+[ 27%] Linking C shared module client_ed25519.so
+[ 27%] Built target client_ed25519
+Scanning dependencies of target caching_sha2_password
+[ 28%] Building C object CMakeFiles/caching_sha2_password.dir/plugins/auth/caching_sha2_pw.c.o
+[ 29%] Building C object CMakeFiles/caching_sha2_password.dir/libmariadb/secure/openssl_crypt.c.o
+[ 29%] Linking C shared module caching_sha2_password.so
+[ 29%] Built target caching_sha2_password
+Scanning dependencies of target dialog
+[ 30%] Building C object CMakeFiles/dialog.dir/plugins/auth/dialog.c.o
+[ 31%] Building C object CMakeFiles/dialog.dir/libmariadb/get_password.c.o
+[ 31%] Linking C shared module dialog.so
+[ 31%] Built target dialog
+Scanning dependencies of target sha256_password
+[ 32%] Building C object CMakeFiles/sha256_password.dir/plugins/auth/sha256_pw.c.o
+[ 32%] Linking C shared module sha256_password.so
+[ 32%] Built target sha256_password
+Scanning dependencies of target mysql_clear_password
+[ 33%] Building C object CMakeFiles/mysql_clear_password.dir/plugins/auth/mariadb_cleartext.c.o
+[ 33%] Linking C shared module mysql_clear_password.so
+[ 33%] Built target mysql_clear_password
+Scanning dependencies of target remote_io
+[ 34%] Building C object CMakeFiles/remote_io.dir/plugins/io/remote_io.c.o
+[ 34%] Linking C shared module remote_io.so
+[ 34%] Built target remote_io
+Scanning dependencies of target mariadb_obj
+[ 34%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/__/plugins/auth/my_auth.c.o
+[ 35%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/__/plugins/auth/old_password.c.o
+[ 36%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/__/plugins/pvio/pvio_socket.c.o
+[ 36%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_array.c.o
+[ 37%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_charset.c.o
+[ 38%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_hash.c.o
+[ 38%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_net.c.o
+[ 39%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/mariadb_charset.c.o
+[ 39%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_time.c.o
+[ 40%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_default.c.o
+[ 41%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_errmsg.c.o
+[ 41%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/mariadb_lib.c.o
+[ 42%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_list.c.o
+[ 43%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_pvio.c.o
+[ 43%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_tls.c.o
+[ 44%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_alloc.c.o
+[ 45%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_compress.c.o
+[ 45%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_init.c.o
+[ 46%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_password.c.o
+[ 46%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_ll2str.c.o
+[ 47%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_sha1.c.o
+[ 48%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/mariadb_stmt.c.o
+In file included from /home/pi/mariadb-connector-c-3.1.12-src/libmariadb/mariadb_stmt.c:46:
+/home/pi/mariadb-connector-c-3.1.12-src/libmariadb/mariadb_stmt.c: In function mysql_net_store_length:
+/home/pi/mariadb-connector-c-3.1.12-src/include/ma_global.h:899:85: warning: right shift count >= width of type [-Wshift-count-overflow]
+ #define int8store(T,A)       do { uint def_temp= (uint) (A), def_temp2= (uint) ((A) >> 32); \
+                                                                                     ^~
+/home/pi/mariadb-connector-c-3.1.12-src/libmariadb/mariadb_stmt.c:476:3: note: in expansion of macro int8store
+   int8store(packet, length);
+   ^~~~~~~~~
+[ 48%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_loaddata.c.o
+[ 49%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_stmt_codec.c.o
+[ 50%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_string.c.o
+[ 50%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_dtoa.c.o
+[ 51%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/mariadb_rpl.c.o
+[ 51%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_client_plugin.c.o
+[ 52%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_io.c.o
+[ 53%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/secure/openssl.c.o
+[ 53%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/__/zlib/adler32.c.o
+[ 54%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/__/zlib/compress.c.o
+[ 55%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/__/zlib/crc32.c.o
+[ 55%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/__/zlib/deflate.c.o
+[ 56%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/__/zlib/gzclose.c.o
+[ 56%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/__/zlib/gzlib.c.o
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/gzlib.c: In function gz_open:
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/gzlib.c:14:17: warning: implicit declaration of function lseek; did you mean fseek? [-Wimplicit-function-declaration]
+ #  define LSEEK lseek
+                 ^~~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/gzlib.c:252:9: note: in expansion of macro LSEEK
+         LSEEK(state->fd, 0, SEEK_END);  /* so gzoffset() is correct */
+         ^~~~~
+[ 57%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/__/zlib/gzread.c.o
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/gzread.c: In function gz_load:
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/gzread.c:35:15: warning: implicit declaration of function read; did you mean fread? [-Wimplicit-function-declaration]
+         ret = read(state->fd, buf + *have, get);
+               ^~~~
+               fread
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/gzread.c: In function gzclose_r:
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/gzread.c:651:11: warning: implicit declaration of function close; did you mean pclose? [-Wimplicit-function-declaration]
+     ret = close(state->fd);
+           ^~~~~
+           pclose
+[ 58%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/__/zlib/gzwrite.c.o
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/gzwrite.c: In function gz_comp:
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/gzwrite.c:89:20: warning: implicit declaration of function write; did you mean fwrite? [-Wimplicit-function-declaration]
+             writ = write(state->fd, strm->next_in, put);
+                    ^~~~~
+                    fwrite
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/gzwrite.c: In function gzclose_w:
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/gzwrite.c:661:9: warning: implicit declaration of function close; did you mean pclose? [-Wimplicit-function-declaration]
+     if (close(state->fd) == -1)
+         ^~~~~
+         pclose
+[ 58%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/__/zlib/infback.c.o
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/infback.c: In function inflateBack:
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/infback.c:479:25: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             state->mode = LEN;
+             ~~~~~~~~~~~~^~~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/infback.c:481:9: note: here
+         case LEN:
+         ^~~~
+[ 59%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/__/zlib/inffast.c.o
+[ 60%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/__/zlib/inflate.c.o
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c: In function inflate:
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:742:25: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             state->mode = EXLEN;
+             ~~~~~~~~~~~~^~~~~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:743:9: note: here
+         case EXLEN:
+         ^~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:755:25: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             state->mode = EXTRA;
+             ~~~~~~~~~~~~^~~~~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:756:9: note: here
+         case EXTRA:
+         ^~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:777:25: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             state->mode = NAME;
+             ~~~~~~~~~~~~^~~~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:778:9: note: here
+         case NAME:
+         ^~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:798:25: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             state->mode = COMMENT;
+             ~~~~~~~~~~~~^~~~~~~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:799:9: note: here
+         case COMMENT:
+         ^~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:818:25: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             state->mode = HCRC;
+             ~~~~~~~~~~~~^~~~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:819:9: note: here
+         case HCRC:
+         ^~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:841:25: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             state->mode = DICT;
+             ~~~~~~~~~~~~^~~~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:842:9: note: here
+         case DICT:
+         ^~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:848:25: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             state->mode = TYPE;
+             ~~~~~~~~~~~~^~~~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:849:9: note: here
+         case TYPE:
+         ^~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:850:16: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             if (flush == Z_BLOCK || flush == Z_TREES) goto inf_leave;
+                ^
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:851:9: note: here
+         case TYPEDO:
+         ^~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:900:16: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             if (flush == Z_TREES) goto inf_leave;
+                ^
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:901:9: note: here
+         case COPY_:
+         ^~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:902:25: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             state->mode = COPY;
+             ~~~~~~~~~~~~^~~~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:903:9: note: here
+         case COPY:
+         ^~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:1041:16: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             if (flush == Z_TREES) goto inf_leave;
+                ^
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:1042:9: note: here
+         case LEN_:
+         ^~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:1043:25: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             state->mode = LEN;
+             ~~~~~~~~~~~~^~~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:1044:9: note: here
+         case LEN:
+         ^~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:1092:25: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             state->mode = LENEXT;
+             ~~~~~~~~~~~~^~~~~~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:1093:9: note: here
+         case LENEXT:
+         ^~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:1102:25: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             state->mode = DIST;
+             ~~~~~~~~~~~~^~~~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:1103:9: note: here
+         case DIST:
+         ^~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:1129:25: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             state->mode = DISTEXT;
+             ~~~~~~~~~~~~^~~~~~~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:1130:9: note: here
+         case DISTEXT:
+         ^~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:1145:25: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             state->mode = MATCH;
+             ~~~~~~~~~~~~^~~~~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:1146:9: note: here
+         case MATCH:
+         ^~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:1220:25: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             state->mode = LENGTH;
+             ~~~~~~~~~~~~^~~~~~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:1221:9: note: here
+         case LENGTH:
+         ^~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:1233:25: warning: this statement may fall through [-Wimplicit-fallthrough=]
+             state->mode = DONE;
+             ~~~~~~~~~~~~^~~~~~
+/home/pi/mariadb-connector-c-3.1.12-src/zlib/inflate.c:1234:9: note: here
+         case DONE:
+         ^~~~
+[ 60%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/__/zlib/inftrees.c.o
+[ 61%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/__/zlib/trees.c.o
+[ 61%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/__/zlib/uncompr.c.o
+[ 62%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/__/zlib/zutil.c.o
+[ 63%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/mariadb_dyncol.c.o
+[ 63%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/mariadb_async.c.o
+[ 64%] Building C object libmariadb/CMakeFiles/mariadb_obj.dir/ma_context.c.o
+/home/pi/mariadb-connector-c-3.1.12-src/libmariadb/ma_context.c: In function my_context_spawn:
+/home/pi/mariadb-connector-c-3.1.12-src/libmariadb/ma_context.c:104:3: warning: u.a[1] may be used uninitialized in this function [-Wmaybe-uninitialized]
+   makecontext(&c->spawned_context, my_context_spawn_internal, 2,
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+               u.a[0], u.a[1]);
+               ~~~~~~~~~~~~~~~
+[ 64%] Built target mariadb_obj
+Scanning dependencies of target mariadbclient
+[ 65%] Linking C static library libmariadbclient.a
+[ 65%] Built target mariadbclient
+Scanning dependencies of target libmariadb
+[ 66%] Linking C shared library libmariadb.so
+[ 66%] Built target libmariadb
+Scanning dependencies of target mariadb_config
+[ 66%] Building C object mariadb_config/CMakeFiles/mariadb_config.dir/mariadb_config.c.o
+[ 67%] Linking C executable mariadb_config
+[ 67%] Built target mariadb_config
+Scanning dependencies of target cctap
+[ 68%] Building C object unittest/mytap/CMakeFiles/cctap.dir/tap.c.o
+[ 68%] Linking C static library libcctap.a
+[ 68%] Built target cctap
+Scanning dependencies of target ma_getopt
+[ 69%] Building C object unittest/libmariadb/CMakeFiles/ma_getopt.dir/ma_getopt.c.o
+[ 70%] Linking C static library libma_getopt.a
+[ 70%] Built target ma_getopt
+Scanning dependencies of target rpl_api
+[ 70%] Building C object unittest/libmariadb/CMakeFiles/rpl_api.dir/rpl_api.c.o
+[ 71%] Linking C executable rpl_api
+[ 71%] Built target rpl_api
+Scanning dependencies of target t_conc173
+[ 71%] Building C object unittest/libmariadb/CMakeFiles/t_conc173.dir/t_conc173.c.o
+[ 72%] Linking C executable t_conc173
+[ 72%] Built target t_conc173
+Scanning dependencies of target async
+[ 72%] Building C object unittest/libmariadb/CMakeFiles/async.dir/async.c.o
+[ 73%] Linking C executable async
+[ 73%] Built target async
+Scanning dependencies of target dyncol
+[ 74%] Building C object unittest/libmariadb/CMakeFiles/dyncol.dir/dyncol.c.o
+[ 75%] Linking C executable dyncol
+[ 75%] Built target dyncol
+Scanning dependencies of target features-10_2
+[ 76%] Building C object unittest/libmariadb/CMakeFiles/features-10_2.dir/features-10_2.c.o
+[ 76%] Linking C executable features-10_2
+[ 76%] Built target features-10_2
+Scanning dependencies of target thread
+[ 77%] Building C object unittest/libmariadb/CMakeFiles/thread.dir/thread.c.o
+[ 77%] Linking C executable thread
+[ 77%] Built target thread
+Scanning dependencies of target ps_new
+[ 78%] Building C object unittest/libmariadb/CMakeFiles/ps_new.dir/ps_new.c.o
+[ 78%] Linking C executable ps_new
+[ 78%] Built target ps_new
+Scanning dependencies of target misc
+[ 78%] Building C object unittest/libmariadb/CMakeFiles/misc.dir/misc.c.o
+[ 79%] Linking C executable misc
+[ 79%] Built target misc
+Scanning dependencies of target basic-t
+[ 79%] Building C object unittest/libmariadb/CMakeFiles/basic-t.dir/basic-t.c.o
+[ 80%] Linking C executable basic-t
+[ 80%] Built target basic-t
+Scanning dependencies of target fetch
+[ 81%] Building C object unittest/libmariadb/CMakeFiles/fetch.dir/fetch.c.o
+[ 81%] Linking C executable fetch
+[ 81%] Built target fetch
+Scanning dependencies of target connection
+[ 82%] Building C object unittest/libmariadb/CMakeFiles/connection.dir/connection.c.o
+[ 82%] Linking C executable connection
+[ 82%] Built target connection
+Scanning dependencies of target performance
+[ 83%] Building C object unittest/libmariadb/CMakeFiles/performance.dir/performance.c.o
+[ 83%] Linking C executable performance
+[ 83%] Built target performance
+Scanning dependencies of target logs
+[ 84%] Building C object unittest/libmariadb/CMakeFiles/logs.dir/logs.c.o
+[ 84%] Linking C executable logs
+[ 84%] Built target logs
+Scanning dependencies of target t_aurora
+[ 85%] Building C object unittest/libmariadb/CMakeFiles/t_aurora.dir/t_aurora.c.o
+[ 86%] Linking C executable t_aurora
+[ 86%] Built target t_aurora
+Scanning dependencies of target bulk1
+[ 87%] Building C object unittest/libmariadb/CMakeFiles/bulk1.dir/bulk1.c.o
+[ 87%] Linking C executable bulk1
+[ 87%] Built target bulk1
+Scanning dependencies of target charset
+[ 88%] Building C object unittest/libmariadb/CMakeFiles/charset.dir/charset.c.o
+[ 89%] Linking C executable charset
+[ 89%] Built target charset
+Scanning dependencies of target sp
+[ 90%] Building C object unittest/libmariadb/CMakeFiles/sp.dir/sp.c.o
+[ 90%] Linking C executable sp
+[ 90%] Built target sp
+Scanning dependencies of target errors
+[ 90%] Building C object unittest/libmariadb/CMakeFiles/errors.dir/errors.c.o
+[ 91%] Linking C executable errors
+[ 91%] Built target errors
+Scanning dependencies of target cursor
+[ 92%] Building C object unittest/libmariadb/CMakeFiles/cursor.dir/cursor.c.o
+[ 92%] Linking C executable cursor
+[ 92%] Built target cursor
+Scanning dependencies of target conc336
+[ 92%] Building C object unittest/libmariadb/CMakeFiles/conc336.dir/conc336.c.o
+[ 93%] Linking C executable conc336
+[ 93%] Built target conc336
+Scanning dependencies of target view
+[ 94%] Building C object unittest/libmariadb/CMakeFiles/view.dir/view.c.o
+[ 95%] Linking C executable view
+[ 95%] Built target view
+Scanning dependencies of target ps
+[ 96%] Building C object unittest/libmariadb/CMakeFiles/ps.dir/ps.c.o
+[ 97%] Linking C executable ps
+[ 97%] Built target ps
+Scanning dependencies of target ps_bugs
+[ 97%] Building C object unittest/libmariadb/CMakeFiles/ps_bugs.dir/ps_bugs.c.o
+[ 98%] Linking C executable ps_bugs
+[ 98%] Built target ps_bugs
+Scanning dependencies of target result
+[ 99%] Building C object unittest/libmariadb/CMakeFiles/result.dir/result.c.o
+[100%] Linking C executable result
+[100%] Built target result
+pi@raspberrypi:~/mariadb-connector-c-3.1.12-src $ ls
+appveyor.yml              CMakeCache.txt       CPackSourceConfig.cmake  mysql_clear_password.so  win
+azure-pipelines.yml       CMakeFiles           dialog.so                plugins                  win-iconv
+caching_sha2_password.so  cmake_install.cmake  include                  README                   zlib
+client                    CMakeLists.txt       libmariadb               remote_io.so
+client_ed25519.so         COPYING.LIB          Makefile                 sha256_password.so
+cmake                     CPackConfig.cmake    mariadb_config           unittest
+pi@raspberrypi:~/mariadb-connector-c-3.1.12-src $ sudo make install
+[ 27%] Built target client_ed25519
+[ 29%] Built target caching_sha2_password
+[ 31%] Built target dialog
+[ 32%] Built target sha256_password
+[ 33%] Built target mysql_clear_password
+[ 34%] Built target remote_io
+[ 64%] Built target mariadb_obj
+[ 65%] Built target mariadbclient
+[ 66%] Built target libmariadb
+[ 67%] Built target mariadb_config
+[ 68%] Built target cctap
+[ 70%] Built target ma_getopt
+[ 71%] Built target rpl_api
+[ 72%] Built target t_conc173
+[ 73%] Built target async
+[ 75%] Built target dyncol
+[ 76%] Built target features-10_2
+[ 77%] Built target thread
+[ 78%] Built target ps_new
+[ 79%] Built target misc
+[ 80%] Built target basic-t
+[ 81%] Built target fetch
+[ 82%] Built target connection
+[ 83%] Built target performance
+[ 84%] Built target logs
+[ 86%] Built target t_aurora
+[ 87%] Built target bulk1
+[ 89%] Built target charset
+[ 90%] Built target sp
+[ 91%] Built target errors
+[ 92%] Built target cursor
+[ 93%] Built target conc336
+[ 95%] Built target view
+[ 97%] Built target ps
+[ 98%] Built target ps_bugs
+[100%] Built target result
+Install the project...
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /usr/local/lib/mariadb/plugin/dialog.so
+-- Installing: /usr/local/lib/mariadb/plugin/client_ed25519.so
+-- Installing: /usr/local/lib/mariadb/plugin/caching_sha2_password.so
+-- Installing: /usr/local/lib/mariadb/plugin/sha256_password.so
+-- Installing: /usr/local/lib/mariadb/plugin/mysql_clear_password.so
+-- Installing: /usr/local/lib/mariadb/plugin/remote_io.so
+-- Installing: /usr/local/include/mariadb/mariadb_com.h
+-- Installing: /usr/local/include/mariadb/mysql.h
+-- Installing: /usr/local/include/mariadb/mariadb_stmt.h
+-- Installing: /usr/local/include/mariadb/ma_pvio.h
+-- Installing: /usr/local/include/mariadb/ma_tls.h
+-- Installing: /usr/local/include/mariadb/mariadb_version.h
+-- Installing: /usr/local/include/mariadb/ma_list.h
+-- Installing: /usr/local/include/mariadb/errmsg.h
+-- Installing: /usr/local/include/mariadb/mariadb_dyncol.h
+-- Installing: /usr/local/include/mariadb/mariadb_ctype.h
+-- Installing: /usr/local/include/mariadb/mariadb_rpl.h
+-- Installing: /usr/local/include/mariadb/mysqld_error.h
+-- Installing: /usr/local/include/mariadb/mysql/client_plugin.h
+-- Installing: /usr/local/include/mariadb/mysql/plugin_auth_common.h
+-- Installing: /usr/local/include/mariadb/mysql/plugin_auth.h
+-- Installing: /usr/local/include/mariadb/mariadb/ma_io.h
+-- Installing: /usr/local/lib/mariadb/libmariadbclient.a
+-- Installing: /usr/local/lib/mariadb/libmariadb.so.3
+-- Installing: /usr/local/lib/mariadb/libmariadb.so
+-- Installing: /usr/local/bin/mariadb_config
+-- Installing: /usr/local/lib/pkgconfig/libmariadb.pc
+pi@raspberrypi:~/mariadb-connector-c-3.1.12-src $ ls
+appveyor.yml              CMakeCache.txt       CPackSourceConfig.cmake  mariadb_config           unittest
+azure-pipelines.yml       CMakeFiles           dialog.so                mysql_clear_password.so  win
+caching_sha2_password.so  cmake_install.cmake  include                  plugins                  win-iconv
+client                    CMakeLists.txt       install_manifest.txt     README                   zlib
+client_ed25519.so         COPYING.LIB          libmariadb               remote_io.so
+cmake                     CPackConfig.cmake    Makefile                 sha256_password.so
+pi@raspberrypi:~/mariadb-connector-c-3.1.12-src $ cd ./include
+pi@raspberrypi:~/mariadb-connector-c-3.1.12-src/include $ ls
+CMakeFiles           ma_config.h     Makefile      mariadb_async.h   mariadb_version.h     ma_tls.h
+cmake_install.cmake  ma_config.h.in  ma_list.h     mariadb_com.h     mariadb_version.h.in  mysql
+CMakeLists.txt       ma_context.h    ma_priv.h     mariadb_ctype.h   ma_server_error.h     mysqld_error.h
+config.h             ma_crypt.h      ma_pthread.h  mariadb_dyncol.h  ma_sha1.h             mysql.h
+errmsg.h             ma_global.h     ma_pvio.h     mariadb_rpl.h     ma_string.h
+ma_common.h          ma_hash.h       mariadb       mariadb_stmt.h    ma_sys.h
+pi@raspberrypi:~/mariadb-connector-c-3.1.12-src/include $ cd ..
+pi@raspberrypi:~/mariadb-connector-c-3.1.12-src $ ls
+appveyor.yml              CMakeCache.txt       CPackSourceConfig.cmake  mariadb_config           unittest
+azure-pipelines.yml       CMakeFiles           dialog.so                mysql_clear_password.so  win
+caching_sha2_password.so  cmake_install.cmake  include                  plugins                  win-iconv
+client                    CMakeLists.txt       install_manifest.txt     README                   zlib
+client_ed25519.so         COPYING.LIB          libmariadb               remote_io.so
+cmake                     CPackConfig.cmake    Makefile                 sha256_password.so
+pi@raspberrypi:~/mariadb-connector-c-3.1.12-src $ cd libma*
+pi@raspberrypi:~/mariadb-connector-c-3.1.12-src/libmariadb $ ls
+bmove_upp.c          ma_alloc.c             ma_dtoa.c    ma_loaddata.c      mariadb_lib.c    secure
+CMakeFiles           ma_array.c             ma_errmsg.c  ma_net.c           mariadb_rpl.c    win32_errmsg.c
+cmake_install.cmake  ma_charset.c           ma_hash.c    ma_password.c      mariadb_stmt.c   win32_errmsg.h
+CMakeLists.txt       ma_client_plugin.c     ma_init.c    ma_pvio.c          ma_sha1.c
+get_password.c       ma_client_plugin.c.in  ma_io.c      mariadb_async.c    ma_stmt_codec.c
+libmariadbclient.a   ma_compress.c          Makefile     mariadb_charset.c  ma_string.c
+libmariadb.so        ma_context.c           ma_list.c    mariadbclient.def  ma_time.c
+libmariadb.so.3      ma_default.c           ma_ll2str.c  mariadb_dyncol.c   ma_tls.c
+pi@raspberrypi:~/mariadb-connector-c-3.1.12-src/libmariadb $

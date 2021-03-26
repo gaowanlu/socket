@@ -1,0 +1,2 @@
+/usr/bin/ar qc libma_getopt.a  CMakeFiles/ma_getopt.dir/ma_getopt.c.o
+/usr/bin/ranlib libma_getopt.a

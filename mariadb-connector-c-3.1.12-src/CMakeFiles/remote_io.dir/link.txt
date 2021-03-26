@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -O2 -g -DNDEBUG -DDBUG_OFF  -shared  -o remote_io.so CMakeFiles/remote_io.dir/plugins/io/remote_io.c.o -lcurl 

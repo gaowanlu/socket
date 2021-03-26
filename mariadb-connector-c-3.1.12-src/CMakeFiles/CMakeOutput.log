@@ -1,0 +1,1101 @@
+The system is: Linux - 5.4.51-v7l+ - armv7l
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/3.13.4/CompilerIdC/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7d493/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7d493.dir/build.make CMakeFiles/cmTC_7d493.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_7d493.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_7d493.dir/testCCompiler.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_7d493
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d493.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_7d493.dir/testCCompiler.c.o  -o cmTC_7d493 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3aa6b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3aa6b.dir/build.make CMakeFiles/cmTC_3aa6b.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_3aa6b.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_3aa6b.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.13/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_3aa6b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3aa6b.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_3aa6b.dir/CMakeCCompilerABI.c.o  -o cmTC_3aa6b 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper
+Target: arm-linux-gnueabihf
+Configured with: ../src/configure -v --with-pkgversion='Raspbian 8.3.0-6+rpi1' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=arm-linux-gnueabihf- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
+Thread model: posix
+gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) 
+COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/
+LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_3aa6b'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
+ /usr/lib/gcc/arm-linux-gnueabihf/8/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3dttQP.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu -m armelf_linux_eabi -o cmTC_3aa6b /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/8/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/8 -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTC_3aa6b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/arm-linux-gnueabihf/8/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_3aa6b'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp'
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_3aa6b/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_3aa6b.dir/build.make CMakeFiles/cmTC_3aa6b.dir/build]
+  ignore line: [make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”]
+  ignore line: [Building C object CMakeFiles/cmTC_3aa6b.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_3aa6b.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_3aa6b]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3aa6b.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_3aa6b.dir/CMakeCCompilerABI.c.o  -o cmTC_3aa6b ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper]
+  ignore line: [Target: arm-linux-gnueabihf]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Raspbian 8.3.0-6+rpi1' --with-bugurl=file:///usr/share/doc/gcc-8/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-8 --program-prefix=arm-linux-gnueabihf- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libitm --disable-libquadmath --disable-libquadmath-support --enable-plugin --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-sjlj-exceptions --with-arch=armv6 --with-fpu=vfp --with-float=hard --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.0 (Raspbian 8.3.0-6+rpi1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/8/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/8/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_3aa6b'  '-mfloat-abi=hard' '-mfpu=vfp' '-mtls-dialect=gnu' '-marm' '-march=armv6+fp']
+  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/8/collect2 -plugin /usr/lib/gcc/arm-linux-gnueabihf/8/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3dttQP.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu -m armelf_linux_eabi -o cmTC_3aa6b /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/8/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/8 -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/8/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTC_3aa6b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/arm-linux-gnueabihf/8/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crtn.o]
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/arm-linux-gnueabihf/8/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc3dttQP.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-armhf.so.3] ==> ignore
+    arg [-X] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_3aa6b] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crti.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/8] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/8]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/8/../../..] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/8/../../..]
+    arg [-L/lib/arm-linux-gnueabihf] ==> dir [/lib/arm-linux-gnueabihf]
+    arg [-L/usr/lib/arm-linux-gnueabihf] ==> dir [/usr/lib/arm-linux-gnueabihf]
+    arg [CMakeFiles/cmTC_3aa6b.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/arm-linux-gnueabihf/8] ==> [/usr/lib/gcc/arm-linux-gnueabihf/8]
+  collapse library dir [/usr/lib/gcc/arm-linux-gnueabihf/8/../../../arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
+  collapse library dir [/usr/lib/gcc/arm-linux-gnueabihf/8/../../..] ==> [/usr/lib]
+  collapse library dir [/lib/arm-linux-gnueabihf] ==> [/lib/arm-linux-gnueabihf]
+  collapse library dir [/usr/lib/arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/usr/lib/gcc/arm-linux-gnueabihf/8;/usr/lib/arm-linux-gnueabihf;/usr/lib;/lib/arm-linux-gnueabihf]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e0ee8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e0ee8.dir/build.make CMakeFiles/cmTC_e0ee8.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_e0ee8.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_e0ee8.dir/feature_tests.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/feature_tests.c
+Linking C executable cmTC_e0ee8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0ee8.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_e0ee8.dir/feature_tests.c.o  -o cmTC_e0ee8 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b64ed/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b64ed.dir/build.make CMakeFiles/cmTC_b64ed.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_b64ed.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_b64ed.dir/feature_tests.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/feature_tests.c
+Linking C executable cmTC_b64ed
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b64ed.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b64ed.dir/feature_tests.c.o  -o cmTC_b64ed 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b15cc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b15cc.dir/build.make CMakeFiles/cmTC_b15cc.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_b15cc.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_b15cc.dir/feature_tests.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/feature_tests.c
+Linking C executable cmTC_b15cc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b15cc.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b15cc.dir/feature_tests.c.o  -o cmTC_b15cc 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Performing C SOURCE FILE Test HAS_-Wunused_FLAG succeeded with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4bcc6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4bcc6.dir/build.make CMakeFiles/cmTC_4bcc6.dir/build
+make[1]: Entering directory '/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4bcc6.dir/src.c.o
+/usr/bin/cc   -DHAS_-Wunused_FLAG   -Wunused -o CMakeFiles/cmTC_4bcc6.dir/src.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp/src.c
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+Linking C executable cmTC_4bcc6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4bcc6.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAS_-Wunused_FLAG    -rdynamic CMakeFiles/cmTC_4bcc6.dir/src.c.o  -o cmTC_4bcc6 
+make[1]: Leaving directory '/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAS_-Wlogical-op_FLAG succeeded with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_42368/fast"
+/usr/bin/make -f CMakeFiles/cmTC_42368.dir/build.make CMakeFiles/cmTC_42368.dir/build
+make[1]: Entering directory '/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_42368.dir/src.c.o
+/usr/bin/cc   -Wunused -DHAS_-Wlogical-op_FLAG   -Wlogical-op -o CMakeFiles/cmTC_42368.dir/src.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp/src.c
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+Linking C executable cmTC_42368
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42368.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -DHAS_-Wlogical-op_FLAG    -rdynamic CMakeFiles/cmTC_42368.dir/src.c.o  -o cmTC_42368 
+make[1]: Leaving directory '/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAS_-Wno-uninitialized_FLAG succeeded with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bbcc4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bbcc4.dir/build.make CMakeFiles/cmTC_bbcc4.dir/build
+make[1]: Entering directory '/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bbcc4.dir/src.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -DHAS_-Wno-uninitialized_FLAG   -Wno-uninitialized -o CMakeFiles/cmTC_bbcc4.dir/src.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp/src.c
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+Linking C executable cmTC_bbcc4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bbcc4.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -DHAS_-Wno-uninitialized_FLAG    -rdynamic CMakeFiles/cmTC_bbcc4.dir/src.c.o  -o cmTC_bbcc4 
+make[1]: Leaving directory '/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAS_-Wall_FLAG succeeded with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c8407/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c8407.dir/build.make CMakeFiles/cmTC_c8407.dir/build
+make[1]: Entering directory '/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c8407.dir/src.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -DHAS_-Wall_FLAG   -Wall -o CMakeFiles/cmTC_c8407.dir/src.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp/src.c
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+Linking C executable cmTC_c8407
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8407.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -DHAS_-Wall_FLAG    -rdynamic CMakeFiles/cmTC_c8407.dir/src.c.o  -o cmTC_c8407 
+make[1]: Leaving directory '/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAS_-Wextra_FLAG succeeded with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0d66f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0d66f.dir/build.make CMakeFiles/cmTC_0d66f.dir/build
+make[1]: Entering directory '/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0d66f.dir/src.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -DHAS_-Wextra_FLAG   -Wextra -o CMakeFiles/cmTC_0d66f.dir/src.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp/src.c
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+Linking C executable cmTC_0d66f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0d66f.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -DHAS_-Wextra_FLAG    -rdynamic CMakeFiles/cmTC_0d66f.dir/src.c.o  -o cmTC_0d66f 
+make[1]: Leaving directory '/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAS_-Wformat-security_FLAG succeeded with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_84be9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_84be9.dir/build.make CMakeFiles/cmTC_84be9.dir/build
+make[1]: Entering directory '/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_84be9.dir/src.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -DHAS_-Wformat-security_FLAG   -Wformat-security -o CMakeFiles/cmTC_84be9.dir/src.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp/src.c
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+Linking C executable cmTC_84be9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84be9.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -DHAS_-Wformat-security_FLAG    -rdynamic CMakeFiles/cmTC_84be9.dir/src.c.o  -o cmTC_84be9 
+make[1]: Leaving directory '/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAS_-Wno-init-self_FLAG succeeded with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_00e91/fast"
+/usr/bin/make -f CMakeFiles/cmTC_00e91.dir/build.make CMakeFiles/cmTC_00e91.dir/build
+make[1]: Entering directory '/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_00e91.dir/src.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -DHAS_-Wno-init-self_FLAG   -Wno-init-self -o CMakeFiles/cmTC_00e91.dir/src.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp/src.c
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+Linking C executable cmTC_00e91
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00e91.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -DHAS_-Wno-init-self_FLAG    -rdynamic CMakeFiles/cmTC_00e91.dir/src.c.o  -o cmTC_00e91 
+make[1]: Leaving directory '/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAS_-Wwrite-strings_FLAG succeeded with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c2be6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c2be6.dir/build.make CMakeFiles/cmTC_c2be6.dir/build
+make[1]: Entering directory '/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c2be6.dir/src.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -DHAS_-Wwrite-strings_FLAG   -Wwrite-strings -o CMakeFiles/cmTC_c2be6.dir/src.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp/src.c
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+Linking C executable cmTC_c2be6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2be6.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -DHAS_-Wwrite-strings_FLAG    -rdynamic CMakeFiles/cmTC_c2be6.dir/src.c.o  -o cmTC_c2be6 
+make[1]: Leaving directory '/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAS_-Wshift-count-overflow_FLAG succeeded with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6766d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6766d.dir/build.make CMakeFiles/cmTC_6766d.dir/build
+make[1]: Entering directory '/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6766d.dir/src.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -DHAS_-Wshift-count-overflow_FLAG   -Wshift-count-overflow -o CMakeFiles/cmTC_6766d.dir/src.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp/src.c
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+Linking C executable cmTC_6766d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6766d.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -DHAS_-Wshift-count-overflow_FLAG    -rdynamic CMakeFiles/cmTC_6766d.dir/src.c.o  -o cmTC_6766d 
+make[1]: Leaving directory '/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAS_-Wdeclaration-after-statement_FLAG succeeded with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8687f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8687f.dir/build.make CMakeFiles/cmTC_8687f.dir/build
+make[1]: Entering directory '/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8687f.dir/src.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -DHAS_-Wdeclaration-after-statement_FLAG   -Wdeclaration-after-statement -o CMakeFiles/cmTC_8687f.dir/src.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp/src.c
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+Linking C executable cmTC_8687f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8687f.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -DHAS_-Wdeclaration-after-statement_FLAG    -rdynamic CMakeFiles/cmTC_8687f.dir/src.c.o  -o cmTC_8687f 
+make[1]: Leaving directory '/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAS_-Wno-undef_FLAG succeeded with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ad7c2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ad7c2.dir/build.make CMakeFiles/cmTC_ad7c2.dir/build
+make[1]: Entering directory '/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ad7c2.dir/src.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -DHAS_-Wno-undef_FLAG   -Wno-undef -o CMakeFiles/cmTC_ad7c2.dir/src.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp/src.c
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+Linking C executable cmTC_ad7c2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad7c2.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -DHAS_-Wno-undef_FLAG    -rdynamic CMakeFiles/cmTC_ad7c2.dir/src.c.o  -o cmTC_ad7c2 
+make[1]: Leaving directory '/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test HAS_-Wno-unknown-pragmas_FLAG succeeded with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d5d6e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d5d6e.dir/build.make CMakeFiles/cmTC_d5d6e.dir/build
+make[1]: Entering directory '/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d5d6e.dir/src.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -DHAS_-Wno-unknown-pragmas_FLAG   -Wno-unknown-pragmas -o CMakeFiles/cmTC_d5d6e.dir/src.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp/src.c
+<command-line>: warning: ISO C99 requires whitespace after the macro name
+Linking C executable cmTC_d5d6e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5d6e.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -DHAS_-Wno-unknown-pragmas_FLAG    -rdynamic CMakeFiles/cmTC_d5d6e.dir/src.c.o  -o cmTC_d5d6e 
+make[1]: Leaving directory '/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8e1d6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8e1d6.dir/build.make CMakeFiles/cmTC_8e1d6.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_8e1d6.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_8e1d6.dir/CheckIncludeFile.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_8e1d6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e1d6.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_8e1d6.dir/CheckIncludeFile.c.o  -o cmTC_8e1d6 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0c6cb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0c6cb.dir/build.make CMakeFiles/cmTC_0c6cb.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_0c6cb.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_0c6cb.dir/CheckIncludeFile.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_0c6cb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c6cb.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_0c6cb.dir/CheckIncludeFile.c.o  -o cmTC_0c6cb 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e7052/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e7052.dir/build.make CMakeFiles/cmTC_e7052.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_e7052.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_e7052.dir/CheckIncludeFile.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_e7052
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7052.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_e7052.dir/CheckIncludeFile.c.o  -o cmTC_e7052 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_54ef4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_54ef4.dir/build.make CMakeFiles/cmTC_54ef4.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_54ef4.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_54ef4.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTC_54ef4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54ef4.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_54ef4.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o  -o cmTC_54ef4 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f9401/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f9401.dir/build.make CMakeFiles/cmTC_f9401.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_f9401.dir/TestEndianess.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_f9401.dir/TestEndianess.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTC_f9401
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9401.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_f9401.dir/TestEndianess.c.o  -o cmTC_f9401 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if files alloca.h exist passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3e854/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3e854.dir/build.make CMakeFiles/cmTC_3e854.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_3e854.dir/HAVE_ALLOCA_H.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_3e854.dir/HAVE_ALLOCA_H.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckIncludeFiles/HAVE_ALLOCA_H.c
+Linking C executable cmTC_3e854
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e854.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_3e854.dir/HAVE_ALLOCA_H.c.o  -o cmTC_3e854 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if files arpa/inet.h exist passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_537b9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_537b9.dir/build.make CMakeFiles/cmTC_537b9.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_537b9.dir/HAVE_ARPA_INET_H.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_537b9.dir/HAVE_ARPA_INET_H.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckIncludeFiles/HAVE_ARPA_INET_H.c
+Linking C executable cmTC_537b9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_537b9.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_537b9.dir/HAVE_ARPA_INET_H.c.o  -o cmTC_537b9 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if files dlfcn.h exist passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dbc81/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dbc81.dir/build.make CMakeFiles/cmTC_dbc81.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_dbc81.dir/HAVE_DLFCN_H.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_dbc81.dir/HAVE_DLFCN_H.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckIncludeFiles/HAVE_DLFCN_H.c
+Linking C executable cmTC_dbc81
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dbc81.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_dbc81.dir/HAVE_DLFCN_H.c.o  -o cmTC_dbc81 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if files fcntl.h exist passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_69a96/fast"
+/usr/bin/make -f CMakeFiles/cmTC_69a96.dir/build.make CMakeFiles/cmTC_69a96.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_69a96.dir/HAVE_FCNTL_H.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_69a96.dir/HAVE_FCNTL_H.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckIncludeFiles/HAVE_FCNTL_H.c
+Linking C executable cmTC_69a96
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_69a96.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_69a96.dir/HAVE_FCNTL_H.c.o  -o cmTC_69a96 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if files float.h exist passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_541c1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_541c1.dir/build.make CMakeFiles/cmTC_541c1.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_541c1.dir/HAVE_FLOAT_H.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_541c1.dir/HAVE_FLOAT_H.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckIncludeFiles/HAVE_FLOAT_H.c
+Linking C executable cmTC_541c1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_541c1.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_541c1.dir/HAVE_FLOAT_H.c.o  -o cmTC_541c1 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if files limits.h exist passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_efea4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_efea4.dir/build.make CMakeFiles/cmTC_efea4.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_efea4.dir/HAVE_LIMITS_H.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_efea4.dir/HAVE_LIMITS_H.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckIncludeFiles/HAVE_LIMITS_H.c
+Linking C executable cmTC_efea4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_efea4.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_efea4.dir/HAVE_LIMITS_H.c.o  -o cmTC_efea4 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if files linux/limits.h exist passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a136c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a136c.dir/build.make CMakeFiles/cmTC_a136c.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_a136c.dir/HAVE_LINUX_LIMITS_H.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_a136c.dir/HAVE_LINUX_LIMITS_H.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckIncludeFiles/HAVE_LINUX_LIMITS_H.c
+Linking C executable cmTC_a136c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a136c.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_a136c.dir/HAVE_LINUX_LIMITS_H.c.o  -o cmTC_a136c 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if files pwd.h exist passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1db0f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1db0f.dir/build.make CMakeFiles/cmTC_1db0f.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_1db0f.dir/HAVE_PWD_H.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_1db0f.dir/HAVE_PWD_H.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckIncludeFiles/HAVE_PWD_H.c
+Linking C executable cmTC_1db0f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1db0f.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_1db0f.dir/HAVE_PWD_H.c.o  -o cmTC_1db0f 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if files sched.h exist passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9625b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9625b.dir/build.make CMakeFiles/cmTC_9625b.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_9625b.dir/HAVE_SCHED_H.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_9625b.dir/HAVE_SCHED_H.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckIncludeFiles/HAVE_SCHED_H.c
+Linking C executable cmTC_9625b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9625b.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_9625b.dir/HAVE_SCHED_H.c.o  -o cmTC_9625b 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if files signal.h exist passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0495a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0495a.dir/build.make CMakeFiles/cmTC_0495a.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_0495a.dir/INCLUDE_SIGNAL.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_0495a.dir/INCLUDE_SIGNAL.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckIncludeFiles/INCLUDE_SIGNAL.c
+Linking C executable cmTC_0495a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0495a.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_0495a.dir/INCLUDE_SIGNAL.c.o  -o cmTC_0495a 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if files stdlib.h exist passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_80f2c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_80f2c.dir/build.make CMakeFiles/cmTC_80f2c.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_80f2c.dir/HAVE_STDLIB_H.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_80f2c.dir/HAVE_STDLIB_H.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckIncludeFiles/HAVE_STDLIB_H.c
+Linking C executable cmTC_80f2c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80f2c.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_80f2c.dir/HAVE_STDLIB_H.c.o  -o cmTC_80f2c 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if files string.h exist passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fc7a3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fc7a3.dir/build.make CMakeFiles/cmTC_fc7a3.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_fc7a3.dir/HAVE_STRING_H.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_fc7a3.dir/HAVE_STRING_H.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckIncludeFiles/HAVE_STRING_H.c
+Linking C executable cmTC_fc7a3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc7a3.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_fc7a3.dir/HAVE_STRING_H.c.o  -o cmTC_fc7a3 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if files strings.h exist passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_abaa3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_abaa3.dir/build.make CMakeFiles/cmTC_abaa3.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_abaa3.dir/HAVE_STRINGS_H.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_abaa3.dir/HAVE_STRINGS_H.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckIncludeFiles/HAVE_STRINGS_H.c
+Linking C executable cmTC_abaa3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_abaa3.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_abaa3.dir/HAVE_STRINGS_H.c.o  -o cmTC_abaa3 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if files sys/ioctl.h exist passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_02892/fast"
+/usr/bin/make -f CMakeFiles/cmTC_02892.dir/build.make CMakeFiles/cmTC_02892.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_02892.dir/HAVE_SYS_IOCTL_H.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_02892.dir/HAVE_SYS_IOCTL_H.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckIncludeFiles/HAVE_SYS_IOCTL_H.c
+Linking C executable cmTC_02892
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02892.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_02892.dir/HAVE_SYS_IOCTL_H.c.o  -o cmTC_02892 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if files sys/select.h exist passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_19aa2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_19aa2.dir/build.make CMakeFiles/cmTC_19aa2.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_19aa2.dir/HAVE_SYS_SELECT_H.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_19aa2.dir/HAVE_SYS_SELECT_H.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckIncludeFiles/HAVE_SYS_SELECT_H.c
+Linking C executable cmTC_19aa2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19aa2.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_19aa2.dir/HAVE_SYS_SELECT_H.c.o  -o cmTC_19aa2 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if files sys/socket.h exist passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c4389/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c4389.dir/build.make CMakeFiles/cmTC_c4389.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_c4389.dir/HAVE_SYS_SOCKET_H.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_c4389.dir/HAVE_SYS_SOCKET_H.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckIncludeFiles/HAVE_SYS_SOCKET_H.c
+Linking C executable cmTC_c4389
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4389.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_c4389.dir/HAVE_SYS_SOCKET_H.c.o  -o cmTC_c4389 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if files sys/stat.h exist passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9ed1b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9ed1b.dir/build.make CMakeFiles/cmTC_9ed1b.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_9ed1b.dir/HAVE_SYS_STAT_H.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_9ed1b.dir/HAVE_SYS_STAT_H.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckIncludeFiles/HAVE_SYS_STAT_H.c
+Linking C executable cmTC_9ed1b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ed1b.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_9ed1b.dir/HAVE_SYS_STAT_H.c.o  -o cmTC_9ed1b 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if files sys/un.h exist passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3eb77/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3eb77.dir/build.make CMakeFiles/cmTC_3eb77.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_3eb77.dir/HAVE_SYS_UN_H.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_3eb77.dir/HAVE_SYS_UN_H.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckIncludeFiles/HAVE_SYS_UN_H.c
+Linking C executable cmTC_3eb77
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3eb77.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_3eb77.dir/HAVE_SYS_UN_H.c.o  -o cmTC_3eb77 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if files unistd.h exist passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3aa94/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3aa94.dir/build.make CMakeFiles/cmTC_3aa94.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_3aa94.dir/HAVE_UNISTD_H.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_3aa94.dir/HAVE_UNISTD_H.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckIncludeFiles/HAVE_UNISTD_H.c
+Linking C executable cmTC_3aa94
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3aa94.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_3aa94.dir/HAVE_UNISTD_H.c.o  -o cmTC_3aa94 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if files utime.h exist passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a6f4c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a6f4c.dir/build.make CMakeFiles/cmTC_a6f4c.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_a6f4c.dir/HAVE_UTIME_H.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_a6f4c.dir/HAVE_UTIME_H.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckIncludeFiles/HAVE_UTIME_H.c
+Linking C executable cmTC_a6f4c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6f4c.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_a6f4c.dir/HAVE_UTIME_H.c.o  -o cmTC_a6f4c 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if files ucontext.h exist passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d19e8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d19e8.dir/build.make CMakeFiles/cmTC_d19e8.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_d19e8.dir/HAVE_FILE_UCONTEXT_H.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_d19e8.dir/HAVE_FILE_UCONTEXT_H.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckIncludeFiles/HAVE_FILE_UCONTEXT_H.c
+Linking C executable cmTC_d19e8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d19e8.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_d19e8.dir/HAVE_FILE_UCONTEXT_H.c.o  -o cmTC_d19e8 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if the function fcntl exists passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1d82c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1d82c.dir/build.make CMakeFiles/cmTC_1d82c.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_1d82c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=fcntl   -o CMakeFiles/cmTC_1d82c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1d82c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d82c.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=fcntl    -rdynamic CMakeFiles/cmTC_1d82c.dir/CheckFunctionExists.c.o  -o cmTC_1d82c 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if the function memcpy exists passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4a4e0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4a4e0.dir/build.make CMakeFiles/cmTC_4a4e0.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_4a4e0.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=memcpy   -o CMakeFiles/cmTC_4a4e0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘memcpy’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.13/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_4a4e0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a4e0.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=memcpy    -rdynamic CMakeFiles/cmTC_4a4e0.dir/CheckFunctionExists.c.o  -o cmTC_4a4e0 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if the function nl_langinfo exists passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cf51d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cf51d.dir/build.make CMakeFiles/cmTC_cf51d.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_cf51d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=nl_langinfo   -o CMakeFiles/cmTC_cf51d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cf51d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf51d.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=nl_langinfo    -rdynamic CMakeFiles/cmTC_cf51d.dir/CheckFunctionExists.c.o  -o cmTC_cf51d 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if the function setlocale exists passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d5c6c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d5c6c.dir/build.make CMakeFiles/cmTC_d5c6c.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_d5c6c.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=setlocale   -o CMakeFiles/cmTC_d5c6c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d5c6c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5c6c.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=setlocale    -rdynamic CMakeFiles/cmTC_d5c6c.dir/CheckFunctionExists.c.o  -o cmTC_d5c6c 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if the function poll exists passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_caf6a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_caf6a.dir/build.make CMakeFiles/cmTC_caf6a.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_caf6a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=poll   -o CMakeFiles/cmTC_caf6a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_caf6a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_caf6a.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=poll    -rdynamic CMakeFiles/cmTC_caf6a.dir/CheckFunctionExists.c.o  -o cmTC_caf6a 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if the function getpwuid exists passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b4aee/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b4aee.dir/build.make CMakeFiles/cmTC_b4aee.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_b4aee.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=getpwuid   -o CMakeFiles/cmTC_b4aee.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b4aee
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4aee.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=getpwuid    -rdynamic CMakeFiles/cmTC_b4aee.dir/CheckFunctionExists.c.o  -o cmTC_b4aee 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if the function makecontext exists passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8ce38/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8ce38.dir/build.make CMakeFiles/cmTC_8ce38.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_8ce38.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=makecontext   -o CMakeFiles/cmTC_8ce38.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8ce38
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ce38.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=makecontext    -rdynamic CMakeFiles/cmTC_8ce38.dir/CheckFunctionExists.c.o  -o cmTC_8ce38 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if the function cuserid exists passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4a339/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4a339.dir/build.make CMakeFiles/cmTC_4a339.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_4a339.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=cuserid   -o CMakeFiles/cmTC_4a339.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4a339
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a339.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=cuserid    -rdynamic CMakeFiles/cmTC_4a339.dir/CheckFunctionExists.c.o  -o cmTC_4a339 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining size of char * passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f2e97/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f2e97.dir/build.make CMakeFiles/cmTC_f2e97.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_f2e97.dir/SIZEOF_CHARP.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_f2e97.dir/SIZEOF_CHARP.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckTypeSize/SIZEOF_CHARP.c
+Linking C executable cmTC_f2e97
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2e97.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_f2e97.dir/SIZEOF_CHARP.c.o  -o cmTC_f2e97 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining size of int passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b254b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b254b.dir/build.make CMakeFiles/cmTC_b254b.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_b254b.dir/SIZEOF_INT.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_b254b.dir/SIZEOF_INT.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckTypeSize/SIZEOF_INT.c
+Linking C executable cmTC_b254b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b254b.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_b254b.dir/SIZEOF_INT.c.o  -o cmTC_b254b 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining size of long passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_40794/fast"
+/usr/bin/make -f CMakeFiles/cmTC_40794.dir/build.make CMakeFiles/cmTC_40794.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_40794.dir/SIZEOF_LONG.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_40794.dir/SIZEOF_LONG.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckTypeSize/SIZEOF_LONG.c
+Linking C executable cmTC_40794
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40794.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_40794.dir/SIZEOF_LONG.c.o  -o cmTC_40794 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining size of long long passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b7dd5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b7dd5.dir/build.make CMakeFiles/cmTC_b7dd5.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_b7dd5.dir/SIZEOF_LONG_LONG.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_b7dd5.dir/SIZEOF_LONG_LONG.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckTypeSize/SIZEOF_LONG_LONG.c
+Linking C executable cmTC_b7dd5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7dd5.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_b7dd5.dir/SIZEOF_LONG_LONG.c.o  -o cmTC_b7dd5 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining size of size_t passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_56ce5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_56ce5.dir/build.make CMakeFiles/cmTC_56ce5.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_56ce5.dir/SIZEOF_SIZE_T.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_56ce5.dir/SIZEOF_SIZE_T.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckTypeSize/SIZEOF_SIZE_T.c
+Linking C executable cmTC_56ce5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56ce5.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_56ce5.dir/SIZEOF_SIZE_T.c.o  -o cmTC_56ce5 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining size of uint passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_55707/fast"
+/usr/bin/make -f CMakeFiles/cmTC_55707.dir/build.make CMakeFiles/cmTC_55707.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_55707.dir/SIZEOF_UINT.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_55707.dir/SIZEOF_UINT.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckTypeSize/SIZEOF_UINT.c
+Linking C executable cmTC_55707
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55707.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_55707.dir/SIZEOF_UINT.c.o  -o cmTC_55707 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining size of ulong passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5176c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5176c.dir/build.make CMakeFiles/cmTC_5176c.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_5176c.dir/SIZEOF_ULONG.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_5176c.dir/SIZEOF_ULONG.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CheckTypeSize/SIZEOF_ULONG.c
+Linking C executable cmTC_5176c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5176c.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_5176c.dir/SIZEOF_ULONG.c.o  -o cmTC_5176c 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Performing C SOURCE FILE Test SOCKET_SIZE_FOUND_socklen_t succeeded with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1bbe1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1bbe1.dir/build.make CMakeFiles/cmTC_1bbe1.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_1bbe1.dir/src.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DSOCKET_SIZE_FOUND_socklen_t   -o CMakeFiles/cmTC_1bbe1.dir/src.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp/src.c
+/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp/src.c:3:22: warning: unused parameter ‘argc’ [-Wunused-parameter]
+         int main(int argc, char **argv)
+                  ~~~~^~~~
+/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp/src.c:3:35: warning: unused parameter ‘argv’ [-Wunused-parameter]
+         int main(int argc, char **argv)
+                            ~~~~~~~^~~~
+Linking C executable cmTC_1bbe1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1bbe1.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DSOCKET_SIZE_FOUND_socklen_t    -rdynamic CMakeFiles/cmTC_1bbe1.dir/src.c.o  -o cmTC_1bbe1 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+Source file was:
+
+        #include <sys/socket.h>
+        int main(int argc, char **argv)
+        {
+          getsockname(0, 0, (socklen_t *)0);
+          return 0;
+        }
+Determining if the function floor exists in the m passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ae970/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ae970.dir/build.make CMakeFiles/cmTC_ae970.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_ae970.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=floor   -o CMakeFiles/cmTC_ae970.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘floor’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.13/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_ae970
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae970.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=floor    -rdynamic CMakeFiles/cmTC_ae970.dir/CheckFunctionExists.c.o  -o cmTC_ae970 -lm 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if the function pthread_getspecific exists in the pthread passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_62083/fast"
+/usr/bin/make -f CMakeFiles/cmTC_62083.dir/build.make CMakeFiles/cmTC_62083.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_62083.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=pthread_getspecific   -o CMakeFiles/cmTC_62083.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_62083
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62083.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=pthread_getspecific    -rdynamic CMakeFiles/cmTC_62083.dir/CheckFunctionExists.c.o  -o cmTC_62083 -lpthread 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if the function gethostbyname_r exists passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d77ca/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d77ca.dir/build.make CMakeFiles/cmTC_d77ca.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_d77ca.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=gethostbyname_r   -o CMakeFiles/cmTC_d77ca.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d77ca
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d77ca.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=gethostbyname_r    -rdynamic CMakeFiles/cmTC_d77ca.dir/CheckFunctionExists.c.o  -o cmTC_d77ca 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if the function setsockopt exists passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_02ea0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_02ea0.dir/build.make CMakeFiles/cmTC_02ea0.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_02ea0.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=setsockopt   -o CMakeFiles/cmTC_02ea0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_02ea0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02ea0.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=setsockopt    -rdynamic CMakeFiles/cmTC_02ea0.dir/CheckFunctionExists.c.o  -o cmTC_02ea0 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fd3e8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fd3e8.dir/build.make CMakeFiles/cmTC_fd3e8.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_fd3e8.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas    -o CMakeFiles/cmTC_fd3e8.dir/CheckIncludeFile.c.o   -c /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_fd3e8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd3e8.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas     -rdynamic CMakeFiles/cmTC_fd3e8.dir/CheckIncludeFile.c.o  -o cmTC_fd3e8 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1c729/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1c729.dir/build.make CMakeFiles/cmTC_1c729.dir/build
+make[1]: 进入目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_1c729.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_1c729.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1c729
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c729.dir/link.txt --verbose=1
+/usr/bin/cc  -Wunused -Wlogical-op -Wno-uninitialized -Wall -Wextra -Wformat-security -Wno-init-self -Wwrite-strings -Wshift-count-overflow -Wdeclaration-after-statement -Wno-undef -Wno-unknown-pragmas -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_1c729.dir/CheckFunctionExists.c.o  -o cmTC_1c729 -lpthread 
+make[1]: 离开目录“/home/pi/mariadb-connector-c-3.1.12-src/CMakeFiles/CMakeTmp”
+
+

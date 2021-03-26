@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/mariadb-connector-c-3.1.12-src/unittest/libmariadb/ma_getopt.c
+config.h
+-
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+stdlib.h
+-
+ma_getopt.h
+/home/pi/mariadb-connector-c-3.1.12-src/unittest/libmariadb/ma_getopt.h
+string.h
+-
+
+/home/pi/mariadb-connector-c-3.1.12-src/unittest/libmariadb/ma_getopt.h
+
+include/config.h
+
