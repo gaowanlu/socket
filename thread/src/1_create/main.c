@@ -45,5 +45,6 @@ int main(void){
     threadBIP=pthread_create(&threadB,NULL,(void*)&threadBFun,(void*)me);
     void*retavl;
     int temp1=pthread_join(threadB,&retavl);//阻塞
+    int temp2=pthread_join(threadA,&retavl);
     return 0;
 }
