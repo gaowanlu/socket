@@ -7,6 +7,9 @@ main:$(ALL_O_FILE)
 
 hello.o main.o:hello.h
 world.o main.o:world.h
+hello.o:hello.c
+world.o:world.c
+main.o:main.c
 
 .PHONY:clean
 clean:
