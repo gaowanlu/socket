@@ -49,7 +49,7 @@ int main(void){
     //结构体初始化为0
     memset(&server_address,0,sizeof(server_address));
     server_address.sin_family=AF_INET;
-    server_address.sin_addr.s_addr=inet_addr("10.60.66.12");
+    server_address.sin_addr.s_addr=inet_addr("10.60.67.34");
     server_address.sin_port=htons(1234);
     //套接字绑定本机信息
     bind(server_socket,(struct sockaddr*)&server_address,sizeof(server_address));

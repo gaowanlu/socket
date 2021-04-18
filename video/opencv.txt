@@ -1,0 +1,4 @@
+g++ `pkg-config opencv --cflags` opencv.cpp  -o opencv `pkg-config opencv --libs`
+g++ `pkg-config opencv --cflags` Server.cpp  -o Server `pkg-config opencv --libs`
+
+sudo vim /etc/udev/rules.d/rplidar.rules
