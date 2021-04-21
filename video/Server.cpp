@@ -27,12 +27,13 @@ int main(void){
     cv::namedWindow("win",0);
     cv::Mat origin_img;
     while(1){
-        if(img.empty()){std::cout<<"图像为空"<<std::endl;return -1;}
         pthread_mutex_lock(&LOCK);//lock
+        if(img.empty()){std::cout<<"图像为空"<<std::endl;return -1;}
         origin_img=img.clone();
         pthread_mutex_unlock(&LOCK);//unlock
+        printf("SHOW\n");
         cv::imshow("win",origin_img);
-        char key=cv::waitKey(1);
+        char key=cv::waitKey(10);
         if(key=='q'){
             pthread_detach(MATSTREAM);
             pthread_join(MATSTREAM,NULL);
@@ -95,8 +96,13 @@ void* MatStreamStart(void*args){
         //lock
         pthread_mutex_lock(&LOCK);
         capture>>img;
+        if(count>1000){
+            count=0;
+        }
+        printf("%d\n",count++);
         //unlock
         pthread_mutex_unlock(&LOCK);
+        usleep(10000);
      }
      printf("|*相机线程结束*|\n");
      return args;
