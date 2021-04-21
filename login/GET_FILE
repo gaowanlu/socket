@@ -3,6 +3,6 @@ Server: DrcomServer1.2
 Access-Control-Allow-Origin: *
 Content-Type: application/javascript; charset=gbk
 Cache-Control: no-cache
-Content-Length: 556
+Content-Length: 558
 
-     dr1003({"result":1,"aolno":25006,"m46":0,"v46ip":"10.60.67.34","myv6ip":"","sms":0,"ufee":0,"NID":"高万禄","olno":1,"udate":"","olmac":"000000000000","ollm":0,"olm1":"00000000","olm2":"0000","olm3":0,"olmm":2,"olm5":0,"gid":14,"olno":1,"olip":"10.60.67.180","oaf":2903,"oat":1382,"mac1":"907841da5962","mac2":"907841da5962","mac3":"90f052943346","mac4":"","mac5":"","mac6":"","ac0":"MTkwMTQyMDMxMw==","oltime":4294967295,"olflow":4294967295,"lip":"10.60.67.34","stime":"2021-04-18 19:19:17","etime":"2021-04-18 19:19:21","uid":"1901420313","sv":0})   
+     dr1003({"result":1,"aolno":26613,"m46":0,"v46ip":"10.60.66.152","myv6ip":"","sms":0,"ufee":0,"NID":"高万禄","olno":1,"udate":"","olmac":"000000000000","ollm":0,"olm1":"00000000","olm2":"0000","olm3":0,"olmm":2,"olm5":0,"gid":14,"olno":1,"olip":"10.60.67.110","oaf":23183,"oat":1107,"mac1":"907841da5962","mac2":"907841da5962","mac3":"90f052943346","mac4":"","mac5":"","mac6":"","ac0":"MTkwMTQyMDMxMw==","oltime":4294967295,"olflow":4294967295,"lip":"0.1.242.203","stime":"2021-04-21 16:08:42","etime":"2021-04-21 16:13:42","uid":"1901420313","sv":0})   

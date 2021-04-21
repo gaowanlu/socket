@@ -8,28 +8,36 @@
 #include<errno.h>
 #include<opencv2/opencv.hpp>
 #include<iostream>
+#include<pthread.h>
+
+pthread_mutex_t LOCK;
+cv::Mat img;
+void* MatStreamStart(void*args);
 
 
 int main(void){
-    //初始化相机
-    cv::VideoCapture capture(1);
-    printf("/");
-    //检测相机是否打开成功
-    if(capture.isOpened())
-        printf("相机打开成功\n");
-    else
-        printf("相机打开失败\n");
-    //获取一帧
+    //init lock
+    pthread_mutex_init(&LOCK,NULL);
+
+    pthread_t MATSTREAM;
+    int MATSTREAMID;
+    char args;
+    MATSTREAMID=pthread_create(&MATSTREAM,NULL,MatStreamStart,(void*)&args);
+    sleep(5);
+    cv::namedWindow("win",0);
+    cv::Mat origin_img;
     while(1){
-        cv::Mat img;
-        capture>>img;
-        if(!img.empty()){std::cout<<"图像为空"<<std::endl;continue;}
-        //转为灰度图像
-        cv::cvtColor(img,img,CV_BGR2GRAY);
-        for(int i=0;i<img.rows;i++){
-            for(int j=0;j<img.cols;j++){
-                std::cout<<img.at<uchar>(j,i)<<std::endl;
-            }
+        if(img.empty()){std::cout<<"图像为空"<<std::endl;return -1;}
+        pthread_mutex_lock(&LOCK);//lock
+        origin_img=img.clone();
+        pthread_mutex_unlock(&LOCK);//unlock
+        cv::imshow("win",origin_img);
+        char key=cv::waitKey(1);
+        if(key=='q'){
+            pthread_detach(MATSTREAM);
+            pthread_join(MATSTREAM,NULL);
+            pthread_mutex_destroy(&LOCK);
+            return 0;
         }
     }
     //创建本机套接字,使用TCP协议
@@ -72,3 +80,24 @@ int main(void){
     close(server_socket);
     return 0;
 }
+
+
+void* MatStreamStart(void*args){
+     static int count=0;
+     printf("|*创建相机线程*|\n");
+     cv::VideoCapture capture(0);
+     if(capture.isOpened()==false){
+         printf("|*创建相机线程失败<-:->相机没有启动*|\n");
+         return args;
+     }
+     printf("|*相机线程创建成功*|\n");
+     while(1){
+        //lock
+        pthread_mutex_lock(&LOCK);
+        capture>>img;
+        //unlock
+        pthread_mutex_unlock(&LOCK);
+     }
+     printf("|*相机线程结束*|\n");
+     return args;
+ }
